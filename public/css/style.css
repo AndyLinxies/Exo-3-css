@@ -1,0 +1,36 @@
+section {
+    padding-bottom: 50px;
+    border-bottom: 1px;
+    border-bottom-color:solid black;
+}
+h4:first-of-type{
+    color: blue;
+}
+
+/* Le premier élément : first child*/
+section:nth-child(2){
+    border-bottom:solid red 5px;
+}
+/*Ceci cible la 2e section et Il faut rajouter Solid pour le voir*/
+h3,ul{
+    color: red;
+}
+/* ", " h3 ET ul en rouge*/
+li>a{
+    font-size: 25px;
+}
+/* "> "Les li suivis de a seront à 25px*/
+h3+span{
+    color: blue;
+}
+/* "+ " Tous les 1ers spans qui suivent un h3 seront en bleu*/
+img{
+    border: solid;
+    border-radius: 50%;
+}
+/* Border radius arrondi les bords, border solid rend les bors visible*/
+section:nth-child(7):hover{
+    color: green;
+}
+/* Cible la section 7 et
+Voici la syntaxe du hover à respecter. # ou . ensuite :hover {} */
